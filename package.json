@@ -1,0 +1,92 @@
+{
+  "license": "MIT",
+  "description": "Allows for easy preview and switching of snippets on about:home.",
+  "engines": {
+    "firefox": ">=31.0"
+  },
+  "author": "Michael Kelly",
+  "title": "about:home Snippet Switcher",
+  "version": "0.1.0",
+  "preferences": [
+    {
+      "description": "URL of the snippet server to download from (e.g. https://snippets.mozilla.com)",
+      "type": "string",
+      "name": "snippet_server",
+      "value": "",
+      "title": "Snippet Server"
+    },
+    {
+      "description": "Version of about:home for Snippet URL",
+      "type": "string",
+      "name": "startpage_version",
+      "value": "",
+      "title": "Startpage Version"
+    },
+    {
+      "description": "Name of the browser for Snippet URL",
+      "type": "string",
+      "name": "name",
+      "value": "",
+      "title": "Name"
+    },
+    {
+      "description": "Browser version for Snippet URL",
+      "type": "string",
+      "name": "version",
+      "value": "",
+      "title": "Version"
+    },
+    {
+      "description": "Build ID for Snippet URL",
+      "type": "string",
+      "name": "appbuildid",
+      "value": "",
+      "title": "App Build ID"
+    },
+    {
+      "description": "Build Target for Snippet URL",
+      "type": "string",
+      "name": "build_target",
+      "value": "",
+      "title": "Build Target"
+    },
+    {
+      "description": "Locale for Snippet URL",
+      "type": "string",
+      "name": "locale",
+      "value": "",
+      "title": "Locale"
+    },
+    {
+      "description": "Release channel for Snippet URL",
+      "type": "string",
+      "name": "channel",
+      "value": "",
+      "title": "Channel"
+    },
+    {
+      "description": "OS Version for Snippet URL",
+      "type": "string",
+      "name": "os_version",
+      "value": "",
+      "title": "OS Version"
+    },
+    {
+      "description": "Distribution for Snippet URL",
+      "type": "string",
+      "name": "distribution",
+      "value": "",
+      "title": "Distribution"
+    },
+    {
+      "description": "Distribution version for Snippet URL",
+      "type": "string",
+      "name": "distribution_version",
+      "value": "",
+      "title": "Distribution Version"
+    }
+  ],
+  "main": "index.js",
+  "id": "jid1-osXce2nIke5hMw",
+  "name": "snippet-switcher"
+}
