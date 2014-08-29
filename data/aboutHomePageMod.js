@@ -13,7 +13,7 @@ self.port.on('getPrefsForFetch', function(urlPieces) {
 
     var xhr = new XMLHttpRequest();
     xhr.timeout = 500;
-    var url = buildSnippetUrl(urlPieces, urlDefaults);
+    var url = buildSnippetUrl(urlPieces, urlDefaults) + '?x=' + (new Date()).getTime();
     console.log('Fetching snippets from: ' + url);
     xhr.open('GET', url, true);
     xhr.onloadend = function() {
