@@ -25,7 +25,7 @@
     {
       "description": "Name of the browser for Snippet URL",
       "type": "string",
-      "name": "name",
+      "name": "browser_name",
       "value": "",
       "title": "Name"
     },
