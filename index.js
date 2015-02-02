@@ -15,10 +15,8 @@ pageMod.PageMod({
     include: 'about:home',
     contentScriptFile: data.url('aboutHomePageMod.js'),
     onAttach: function(worker) {
-        worker.port.on('fetchSnippets', function() {
-            getSnippets(function(snippetCode) {
-                worker.port.emit('showSnippets', snippetCode);
-            });
+        getSnippets(function(snippetCode) {
+            worker.port.emit('saveSnippets', snippetCode);
         });
     }
 });
@@ -34,7 +32,7 @@ var button = buttons.ActionButton({
 function openPreferences() {
     // Open preferences pane for this addon.
     var win = Services.wm.getMostRecentWindow('navigator:browser');
-    win.BrowserOpenAddonsMgr('addons://detail/jid1-osXce2nIke5hMw%40jetpack/preferences');
+    win.BrowserOpenAddonsMgr('addons://detail/snippet-switcher%40mkelly.me/preferences');
 }
 
 function getSnippets(callback) {
